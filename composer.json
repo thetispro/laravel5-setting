@@ -1,0 +1,30 @@
+{
+    "name": "thetispro/laravel5-setting",
+    "description": "Persistent configuration settings for Laravel 5 - Create, Read, Update and Delete settings stored in files using JSON",
+    "homepage": "https://github.com/thetispro/laravel5-setting",
+    "keywords": ["laravel", "config", "setting"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Phil Foulston",
+            "email": "info@weztec.com"
+        },
+        {
+            "name": "Eric Leroy",
+            "email": "thetispro@me.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Thetispro\\Setting\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
