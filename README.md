@@ -7,6 +7,8 @@ This package is a fork of <a href ="https://github.com/Phil-F/Setting">philf/set
 ##Description
 Persistent configuration settings for Laravel 5.x - Create, Read, Update and Delete settings stored in files using JSON.
 
+As Philf said : 
+
 This package was the result of me not being able to save new settings to config files in a more persistent way.
 
 This package was designed not to replace the config solution currently offered by Laravel but rather complement it and be used in unison with it.
@@ -102,4 +104,4 @@ Using both a different path and filename (make sure the path exists and is writa
 
 ## License
 
-Laravel_5 Setting is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Laravel 5 Setting is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
