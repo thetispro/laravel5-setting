@@ -205,7 +205,6 @@ class Setting {
     public function save($path = null, $filename = null)
     {
         $this->path     = isset($path) ? $path : $this->path;
-       \Log::info($this->path);
         $this->filename = isset($filename) ? $filename : $this->filename;
         if ( ! file_exists($this->path))
         {
