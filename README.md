@@ -1,3 +1,4 @@
+https://travis-ci.org/thetispro/laravel5-setting.svg
 
 # Laravel 5 Setting
 
@@ -32,11 +33,18 @@ Require this package in your composer.json:
 
 Add the ServiceProvider to the 'providers' array in config/app.php
 
-    Thetispro\Setting\SettingServiceProvider::class,
+    'providers' => [
+    // ... Illuminate Providers
+    // ... App 
+    ProvidersThetispro\Setting\SettingServiceProvider::class,
+    ],
 
 If you want to use the facade, add the alias to the 'aliases' array in config/app.php
 
+    'aliases' => [
+    // ... Illuminate Facades    
     'Setting' => Thetispro\Setting\Facades\Setting::class,
+    ]
 
 Finaly, publish the config file
 
