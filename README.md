@@ -37,7 +37,7 @@ Add the ServiceProvider to the 'providers' array in config/app.php
     'providers' => [
     // ... Illuminate Providers
     // ... App 
-    ProvidersThetispro\Setting\SettingServiceProvider::class,
+    Thetispro\Setting\SettingServiceProvider::class,
     ],
 
 If you want to use the facade, add the alias to the 'aliases' array in config/app.php
