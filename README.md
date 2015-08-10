@@ -1,4 +1,5 @@
-https://travis-ci.org/thetispro/laravel5-setting.svg
+
+[![Build Status](https://travis-ci.org/thetispro/laravel5-setting.svg)](https://travis-ci.org/thetispro/laravel5-setting)
 
 # Laravel 5 Setting
 
