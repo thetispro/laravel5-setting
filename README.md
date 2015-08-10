@@ -20,7 +20,7 @@ By default the data is stored in base_path().'/storage/meta/setting.json' but th
 This package also provides a fallback for the Laravel Config facade, you can set it in the config, if the key is not found in the json file it will look it up in the Config facade.
 
 ## Contributors
-    For Phil-F/Setting:
+For philf/setting:
     janhartigan (Treeface)
     Nils Plaschke (Chumper)
 
