@@ -119,4 +119,11 @@ class SettingTest extends PHPUnit_Framework_TestCase
         $this->assertSame(0, $value);
     }
 
+    public function testDifferentPath(){
+        $newPath=app_path().'/storage/meta/sub';
+        $this->setting->path($newPath)->set('a', 'aa');
+        $this->assertTrue($this->setting->path($newPath)->has('a'));
+        $this->assertEquals('aa', $this->setting->path($newPath)->get('a'));
+    }
+
 }

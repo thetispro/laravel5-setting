@@ -33,8 +33,7 @@ class SettingServiceProvider extends ServiceProvider {
             __DIR__ . '/config/setting.php' => config_path('setting.php'),
         ]);
 
-        $this->app->bind(['setting' => 'Thetispro\Setting\Setting'],
-                function($app) {
+        $this->app->bind('setting',function($app) {
             return new Setting(
                     config('setting.path'), config('setting.filename'),
                     config('setting.fallback') ? new LaravelFallbackInterface() : null);
