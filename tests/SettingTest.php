@@ -33,8 +33,9 @@ class SettingTest extends PHPUnit_Framework_TestCase
      */
     public function tearDown()
     {
-        if (file_exists('test/' . $this->file))
+        if (file_exists('test/' . $this->file)) {
             unlink('test/' . $this->file);
+        }
     }
 
     public function testSet()
@@ -119,8 +120,9 @@ class SettingTest extends PHPUnit_Framework_TestCase
         $this->assertSame(0, $value);
     }
 
-    public function testDifferentPath(){
-        $newPath=app_path().'/storage/meta/sub';
+    public function testDifferentPath()
+    {
+        $newPath = sys_get_temp_dir() . ('/sub');
         $this->setting->path($newPath)->set('a', 'aa');
         $this->assertTrue($this->setting->path($newPath)->has('a'));
         $this->assertEquals('aa', $this->setting->path($newPath)->get('a'));
