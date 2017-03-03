@@ -30,10 +30,10 @@ Please use <a href ="https://github.com/Phil-F/Setting">philf/setting</a>
 ## Installation
 Require this package in your composer.json:
 
-   #### For Laravel 5 -> 5.3 
+#### For Laravel 5 -> 5.3 
     "thetispro/laravel5-setting": "1.0"
     
-   #### For Laravel 5.4 
+#### For Laravel 5.4 
         "thetispro/laravel5-setting": "1.1"
 
 Add the ServiceProvider to the 'providers' array in config/app.php
